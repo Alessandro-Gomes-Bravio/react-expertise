@@ -1,11 +1,15 @@
-
 import Booklist from "./components/Booklist"
+import Header from "./components/Header"
+import Layout from "./components/Layout"
 
 function App() {
   return (
     <>
+      <Header/>
       <h1>welcome</h1>
-      <Booklist/>
+      <Layout>
+        <Booklist/>
+      </Layout>
     </>
   )
 }
