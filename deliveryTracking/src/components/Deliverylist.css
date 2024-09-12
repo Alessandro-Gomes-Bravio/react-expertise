@@ -1,0 +1,20 @@
+.Deliverylist {
+    background-color: black;
+    width: 350px;
+    height: 93vh;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.DeliverylistName {
+    color: white;
+    list-style-type: none;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-size: 25px;
+}
+
+li {
+    color: white;
+    list-style-type: none;
+}

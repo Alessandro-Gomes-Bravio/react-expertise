@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.Sidebar {
+    width: 80px;
+    height: 100vh;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+.iconWrapper {
+    background-color: #333; /* Background for the icon wrapper */
+    padding: 15px;
+    border-radius: 50%; /* Fully rounded for a circle shape */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for a floating effect */
+}
+
+.icon {
+    color: white;
+    font-size: 28px; /* Slightly larger icon */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconWrapper:hover {
+    background-color: #555; /* Slight color change on hover */
+    cursor: pointer;
+}
