@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header/>
-      <h1>welcome</h1>
+      <h1>Amazon best sellers</h1>
       <Layout>
         <Booklist/>
       </Layout>

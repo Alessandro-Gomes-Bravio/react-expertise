@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Book from './Book';
+import './Booklist.css'
 
 const Booklist = () => {
     const [books, setBooks] = useState([
@@ -11,7 +12,7 @@ const Booklist = () => {
     return (
         <ul>
             {books.map((book, index) => (
-                <li key={index}>
+                <li className="book" key={index}>
                     <Book 
                         image={book.image} 
                         title={book.title} 
