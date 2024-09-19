@@ -1,5 +1,61 @@
-img {
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #f0f4fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.menu-item img {
     border: rgb(188, 160, 0) 5px solid;
     border-radius: 10px;
-    height: 125px;
+    height: 120px;
+    margin-right: 20px;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+.price {
+    font-weight: bold;
+    color: #d35400;
+    margin-left: auto;
+}
+.menu-container h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-container h1::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #d35400;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }

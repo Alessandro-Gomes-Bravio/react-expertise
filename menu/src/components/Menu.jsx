@@ -2,39 +2,36 @@ import { useState } from "react";
 import data from "../data";
 import './Menu.css';
 
-
-const MenuItem = ({ title, category, price, img, desc }) => {
+const MenuItem = ({ title, price, img, desc }) => {
     return (
-        <div>
+        <div className="menu-item">
             <img src={img} alt={title} />
-            <div className="top">
-            <h3>{title}</h3>
-            <p>Price: ${price.toFixed(2)}</p>
+            <div>
+                <h3>{title}</h3>
+                <p>{desc}</p>
             </div>
-            <p>{desc}</p>
+            <p className="price">${price.toFixed(2)}</p>
         </div>
     );
 };
 
 const Menu = () => {
     const [menuItems, setMenuItems] = useState(data);
-    
+
     return (
-        <ul>
-            <h1>Our menu</h1>
+        <div className="menu-container">
+            <h1>Our Menu</h1>
             {menuItems.map((menuItem) => (
                 <MenuItem
                     key={menuItem.id}
                     title={menuItem.title}
-                    category={menuItem.category}
                     price={menuItem.price}
                     img={menuItem.img}
                     desc={menuItem.desc}
                 />
             ))}
-        </ul>
+        </div>
     );
 };
-
 
 export default Menu;
