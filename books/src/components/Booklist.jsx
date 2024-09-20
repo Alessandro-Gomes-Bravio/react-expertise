@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Book from './Book';
-import './Booklist.css'
+import './Booklist.css';
 
 const Booklist = () => {
     const [books, setBooks] = useState([
-        { image: "image1.jpg", title: "kumba", author: "Mebumaahboi" },
-        { image: "image2.jpg", title: "Get Out", author: "Earal" },
-        { image: "image3.jpg", title: "Boi What De Hell Boi", author: "Earal" }
+        { image: "/images.png", title: "kumba", author: "Mebumaahboi" },
+        { image: "/image2.jpg", title: "Get Out", author: "Earal" },
+        { image: "/image3.jpg", title: "Boi What De Hell Boi", author: "Earal" }
     ]);
 
     return (
